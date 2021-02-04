@@ -12,7 +12,7 @@ import { MemberService } from 'src/app/_services/member.service';
 export class MemberDetailComponent implements OnInit {
 
   member: Member;
-  galleryOptions: NgxGalleryOptions[];
+  galleryOptions: NgxGalleryOptions[]
   galleryImages: NgxGalleryImage[];
 
   constructor(private memberService: MemberService, private route: ActivatedRoute) { }

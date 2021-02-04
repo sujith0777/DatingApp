@@ -12,25 +12,26 @@
 .member-tabset > .nav-tabs > li.open > a, .member-tabset > .nav-tabs > li:hover > a {
   border: 0;
   background: none !important;
-  color: greenyellow;
+  color: lightblue;
 }
 
 .member-tabset > .nav-tabs > li.open > a > i, .member-tabset > .nav-tabs > li:hover > a > i {
-  color: #a6a6a6;
+  color:#fbcdcf;
 }
 
 .member-tabset > .nav-tabs > li.open .dropdown-menu, .member-tabset > .nav-tabs > li:hover .dropdown-menu {
   margin-top: 0px;
+
 }
 
 .member-tabset > .nav-tabs > li.active {
-  border-bottom: 4px solid greenyellow;
+  border-bottom: 4px solid lightblue;
   position: relative;
 }
 
 .member-tabset > .nav-tabs > li.active > a {
   border: 0 !important;
- 
+  background-color: darkslategray;
 }
 
 .member-tabset > .nav-tabs > li.active > a > i {
@@ -39,7 +40,7 @@
 
 .member-tabset > .tab-content {
   margin-top: -3px;
-  background-color: black;
+  background-color: darkslategray;
   border: 0;
   border-top: 1px solid #eee;
   padding: 15px 0;
