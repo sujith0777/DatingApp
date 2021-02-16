@@ -2,6 +2,7 @@ using System.Linq;
 using API.DTOs;
 using API.Entities;
 using API.Extensions;
+using API.Interfaces;
 using AutoMapper;
 
 namespace API.Helpers
@@ -17,6 +18,11 @@ namespace API.Helpers
             CreateMap<Photo, PhotoDto>();
             CreateMap<MemberUpdateDto, AppUser>();
             CreateMap<RegisterDto, AppUser>();
+            CreateMap<Message, MessageDto>()
+                .ForMember(dest=>dest.SenderPhotoUrl, opt=>opt.MapFrom(src=>
+                src.Sender.Photos.FirstOrDefault(x=>x.isMain).url))
+                .ForMember(dest=>dest.RecipientPhotoUrl, opt=>opt.MapFrom(src=>
+                src.Recipient.Photos.FirstOrDefault(x=>x.isMain).url));
 
         }
     }
